@@ -143,3 +143,8 @@ button {
 }
 `;
 
+export const VerticalLine = styled.div`
+border: 1px solid ${colors.brown};
+height: 4.7rem;
+margin-left: 1.7rem;
+`;
