@@ -44,5 +44,30 @@ box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
 export const Hamburger = styled.span`
 background: #000;
+position: relative;
+display: block;
+width: 30px;
+height: 2px;
+top: 29px;
+left: 15px;
+transition: 0.3s ease-in-out;
 
+&::before,
+&::after {
+  background: #000;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+
+&:before {
+  top: -10px;
+}
+
+&after {
+  bottom: -10px;
+}
 `;
