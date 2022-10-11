@@ -16,3 +16,27 @@ background-color: rgba(59, 32, 11, 0.05);
 color: ${colors.brown};
 backdrop-filter: blur(10px);
 `;
+
+export const Navigation = styled.div`
+display: flex;
+align-items: center;
+height: 100%;
+justify-content: space-between;
+width: 110rem;
+
+@media screen and (${device.laptop}) {
+  width: 90rem;
+}
+
+@media screen and (${device.tablet}) {
+  width: 80rem;
+}
+
+@media screen and (${device.ipad}) {
+  width: 60rem;
+}
+
+@media screen and (${device.mobile_medium}) {
+  width: 36rem;
+}
+`;
