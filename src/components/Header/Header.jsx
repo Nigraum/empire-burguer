@@ -9,7 +9,8 @@ import {
   VerticalLine
  } from "./Styles";
 
- 
+ import SocialIcons from "../Shared/SocialIcons/SocialIcons";
+ import Logo from "../Shared/SVG/Logo";
 
 const Header = () => {
   return (
