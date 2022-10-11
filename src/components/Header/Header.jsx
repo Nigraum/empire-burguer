@@ -9,8 +9,16 @@ import {
   VerticalLine
  } from "./Styles";
 
+ 
+
 const Header = () => {
   return (
-    
+    <Container>
+      <Navigation>
+        <LogoContainer>
+          
+        </LogoContainer>
+      </Navigation>
+    </Container>
   )
 }
