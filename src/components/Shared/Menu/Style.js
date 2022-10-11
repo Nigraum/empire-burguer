@@ -28,3 +28,8 @@ input:checked ~ label #hamburguer:after {
   display: block;
 }
 `;
+
+export const MenuDiv = styled.div`
+background: ${colors.white};
+
+`;
