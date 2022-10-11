@@ -56,4 +56,57 @@ h1 {
     font-weight: 900;
   }
 }
+
+@media screen and (${device.laptop}) {
+  margin-right: 5rem;
+
+  h1 {
+    font-size: 2.05rem;
+  }
+}
+
+@media screen and (${device.tablet}) {
+  margin-right: 3rem;
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
 `;
+
+export const Nav = styled.ul`
+display: flex;
+list-style: none;
+margin-right: 8rem;
+
+li {
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin-right: 1.6rem;
+  line-height: 2.5rem;
+}
+
+@media screen and (${device.laptop}) {
+  margin-right: 5rem;
+
+  li {
+    font-size: 1.5rem;
+    margin-right: 1.4rem;
+  }
+}
+
+@media screen and (${device.ipad}) {
+  margin-right: 0;
+
+  li {
+    margin-right: 0;
+    margin-left: 1.4rem;
+  }
+}
+
+@media screen and (${device.mobile_medium}) {
+  display: none;
+}
+`;
+
+
