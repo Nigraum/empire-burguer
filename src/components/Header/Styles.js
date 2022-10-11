@@ -109,4 +109,37 @@ li {
 }
 `;
 
+export const SocialMedia = styled.div`
+display: flex;
+align-items: center;
+height: 100%;
+
+img {
+  width: 3rem;
+  margin-right: 1.8rem;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 12rem;
+  padding: 0.4rem 1.6rem;
+  margin-left: 1.3rem;
+  border: none;
+  border-radius: 4px;
+  background-color: ${colors.yellow};
+  outline: none;
+
+  span {
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (${device.ipad}) {
+  display: none;
+}
+`;
 
