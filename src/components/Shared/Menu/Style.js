@@ -41,3 +41,8 @@ bottom: 25px;
 right: 25px;
 box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 `;
+
+export const Hamburger = styled.span`
+background: #000;
+
+`;

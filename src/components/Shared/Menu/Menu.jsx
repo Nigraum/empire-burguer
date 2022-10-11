@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, MenuDiv } from "./Style";
+import { Container, MenuDiv, Hamburger } from "./Style";
 
 const Menu = () => {
   return (
@@ -8,9 +8,11 @@ const Menu = () => {
 
       <label htmlFor="menu-hamburguer">
         <MenuDiv>
-
+          <Hamburger id="hamburguer"></Hamburger>
         </MenuDiv>
       </label>
     </Container>
   );
 };
+
+export default Menu;
