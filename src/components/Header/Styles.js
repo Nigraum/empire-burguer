@@ -40,3 +40,20 @@ width: 110rem;
   width: 36rem;
 }
 `;
+
+export const LogoContainer = styled.div`
+display: flex;
+align-items: center;
+margin-right: 8rem;
+
+h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2.9rem;
+  width: fit-content;
+
+  span {
+    font-weight: 900;
+  }
+}
+`;
