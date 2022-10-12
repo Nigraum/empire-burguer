@@ -67,5 +67,44 @@ export const AdContainer = styled.div`
     }
   }
 
-  @media
+  @media screen and (${device.laptop}) {
+    max-width: 90rem;
+
+    h2 {
+      font-size: 5.7rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (${device.tablet}) {
+    max-width: 80rem;
+
+    h2 {
+      font-size: 4.8rem;
+    }
+
+    h4 {
+      font-size: 1.7rem;
+    }
+  }
+
+  @media screen and (${device.ipad}) {
+    max-width: 60rem;
+    top: 100px;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    width: 36rem;
+  }
 `;
