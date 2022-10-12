@@ -96,6 +96,16 @@ export const AdvantageIcon = styled.div`
   > * {
     color: ${colors.brown};
   }
+
+  @media screen and (${device.tablet}) {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    width: 6rem;
+    height: 6rem;
+  }
 `;
 
 export const AdvantageInfo = styled.div`
