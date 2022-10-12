@@ -132,5 +132,21 @@ export const Button = styled.button`
     box-shadow: inset 10em 0 0 0 #cd0000bb;
   }
 
-  @media 
+  @media screen and (${device.laptop}) {
+    font-size: 1.8rem;
+  }
+
+  @media screen and (${device.tablet}) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (${device.ipad}) {
+    font-size: 1.3rem;
+    height: 3.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    width: 15rem;
+  }
 `;
