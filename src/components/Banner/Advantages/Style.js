@@ -111,6 +111,7 @@ export const AdvantageIcon = styled.div`
 export const AdvantageInfo = styled.div`
   display: flex;
   flex-direction: column;
+
   width: 17rem;
   color: ${colors.brown};
   font-weight: 400;
@@ -157,4 +158,17 @@ export const AdvantageInfo = styled.div`
 export const VerticalLine = styled.div`
   border-left: 1px solid ${colors.brown};
   height: 6rem;
+
+  @media screen and (${device.ipad}) {
+    display: none;
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    display: block;
+    border-left: none;
+    border-top: 1px solid #492e1526;
+    height: 0;
+    width: 29rem;
+    margin: 1.6rem 0;
+  }
 `;
