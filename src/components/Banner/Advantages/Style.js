@@ -47,6 +47,39 @@ export const Container = styled.div`
 
 export const Advantage = styled.div`
   display: flex;
+
+  @media screen and (${device.ipad}) {
+    justify-content: center;
+    width: 29rem;
+    padding: 3rem 2rem;
+    background-color: ${colors.white};
+
+    :nth-child(1) {
+      border-radius: 1rem 0 0 1rem;
+    }
+
+    :nth-child(3) {
+      border-radius: 0 1rem 1rem 0;
+    }
+
+    :nth-child(5) {
+      border-top: 2px solid ${colors.white};
+      border-radius: 0 0 1rem 1rem;
+    }
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    justify-content: flex-start;
+    width: 30rem;
+    padding: 0;
+
+    :nth-child(1),
+    :nth-child(3),
+    :nth-child(5) {
+      border: none;
+      border-radius: 0;
+    }
+  }
 `;
 
 export const AdvantageIcon = styled.div`
