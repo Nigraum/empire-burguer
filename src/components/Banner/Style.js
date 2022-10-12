@@ -110,6 +110,27 @@ export const AdContainer = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: #fff;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  height: 5.2rem;
+  width: fit-content;
+  padding: 1rem 2rem;
+
+  background-color: ${colors.red};
+  color: ${colors.white};
+  font-size: 2.2rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    box-shadow: inset 10em 0 0 0 #cd0000bb;
+  }
+
+  @media 
 `;
