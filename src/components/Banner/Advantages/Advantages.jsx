@@ -1,5 +1,5 @@
 import React from "react";
-import { Advantage, AdvantageIcon, AdvantageInfo, Container } from "./Style";
+import { Advantage, AdvantageIcon, AdvantageInfo, Container, VerticalLine } from "./Style";
 
 import { FaHamburguer } from "react-icons/fa";
 
@@ -15,6 +15,7 @@ const Advantages = () => {
           <p>Nossas receitas são feitas com todo cuidado</p>
         </AdvantageInfo>
       </Advantage>
+      <VerticalLine />
     </Container>
   );
 };

@@ -46,8 +46,7 @@ export const Container = styled.div`
 `;
 
 export const Advantage = styled.div`
-  background-color: #fff;
-  width: 100%;
+  display: flex;
 `;
 
 export const AdvantageIcon = styled.div`
@@ -83,4 +82,9 @@ export const AdvantageInfo = styled.div`
     color: ${colors.brown_secondary};
     font-size: 1.6rem;
   }
+`;
+
+export const VerticalLine = styled.div`
+  border-left: 1px solid ${colors.brown};
+  height: 6rem;
 `;
