@@ -28,5 +28,44 @@ img {
 `;
 
 export const AdContainer = styled.div`
-background: #fff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 117rem;
+  color: ${colors.brown};
+
+  h2, h4 {
+    width: fit-content;
+  }
+
+  h2 {
+    font-family: "Lilita One";
+    text-transform: uppercase;
+    font-size: 7.7rem;
+    margin-bottom: 1rem;
+
+    span {
+      color: ${colors.yellow};
+    }
+  }
+
+  h4 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 1.4rem;
+
+    :first-child {
+      font-weight: 700;
+      margin: 0;
+    }
+
+    span {
+      font-weight: 900;
+      background-color: ${colors.yellow};
+      border-radius: 0.5rem;
+      padding: 0.2rem 0.5rem;
+    }
+  }
+
+  @media
 `;
