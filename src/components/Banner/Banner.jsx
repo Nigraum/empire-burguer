@@ -3,6 +3,7 @@ import { AdContainer, Button, Container } from "./Style";
 
 import banner from "../../assets/images/banner.png";
 import banner_mobile from "../../assets/images/banner_mobile.png";
+import Advantages from "./Advantages/Advantages";
 
 const Banner = () => {
   return (
@@ -17,6 +18,7 @@ const Banner = () => {
         </h4>
         <Button>Comprar Agora</Button>
       </AdContainer>
+      <Advantages />
       <img src={banner} />
       <img src={banner_mobile} />
     </Container>
