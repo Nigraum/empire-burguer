@@ -11,6 +11,7 @@ export const Container = styled.div`
   height: 10.1rem;
   width: 90rem;
   bottom: -60px;
+
   background-color: ${colors.white};
   box-shadow: 0 4px 40px ${colors.onhover};
   border-radius: 1rem;
@@ -42,4 +43,9 @@ export const Container = styled.div`
     border-radius: 1rem;
     background-color: ${colors.white};
   }
+`;
+
+export const Advantage = styled.div`
+  background-color: #fff;
+  width: 100%;
 `;
