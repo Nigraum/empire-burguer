@@ -1,5 +1,5 @@
 import React from "react";
-import { Advantage, AdvantageIcon, Container } from "./Style";
+import { Advantage, AdvantageIcon, AdvantageInfo, Container } from "./Style";
 
 import { FaHamburguer } from "react-icons/fa";
 
@@ -10,6 +10,10 @@ const Advantages = () => {
         <AdvantageIcon>
           <FaHamburguer size={"3rem"} />
         </AdvantageIcon>
+        <AdvantageInfo>
+          <h2>Artesanal</h2>
+          <p>Nossas receitas são feitas com todo cuidado</p>
+        </AdvantageInfo>
       </Advantage>
     </Container>
   );
