@@ -15,4 +15,31 @@ export const Container = styled.div`
   box-shadow: 0 4px 40px ${colors.onhover};
   border-radius: 1rem;
   padding: 0.5rem;
+
+  @media screen and (${device.tablet}) {
+    width: 80rem;
+  }
+
+  @media screen and (${device.ipad}) {
+    width: 60rem;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+    box-shadow: none;
+    bottom: -160px;
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    padding: 2.5rem 3.1rem;
+    bottom: -210px;
+
+    box-shadow: 0 4px 40px ${colors.onhover};
+    border-radius: 1rem;
+    background-color: ${colors.white};
+  }
 `;
