@@ -67,5 +67,20 @@ export const AdvantageIcon = styled.div`
 `;
 
 export const AdvantageInfo = styled.div`
-  background: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+  color: ${colors.brown};
+  font-weight: 400;
+
+  h2 {
+    font-family: "Lilita One";
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: ${colors.brown_secondary};
+    font-size: 1.6rem;
+  }
 `;
