@@ -125,6 +125,33 @@ export const AdvantageInfo = styled.div`
     color: ${colors.brown_secondary};
     font-size: 1.6rem;
   }
+
+  @media screen and (${device.tablet}) {
+    width: 15rem;
+    text-overflow: ellipsis;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    width: 18rem;
+    text-overflow: ellipsis;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+  }
 `;
 
 export const VerticalLine = styled.div`
