@@ -7,7 +7,7 @@ import {
   VerticalLine 
 } from "./Style";
 
-import { FaHamburguer } from "react-icons/fa";
+import { FaHamburger } from "react-icons/fa";
 import { MdDeliveryDining, MdHeadsetMic } from "react-icons/md";
 
 const Advantages = () => {
@@ -15,7 +15,7 @@ const Advantages = () => {
     <Container>
       <Advantage>
         <AdvantageIcon>
-          <FaHamburguer size={"3rem"} />
+          <FaHamburger size={"3rem"} />
         </AdvantageIcon>
         <AdvantageInfo>
           <h2>Artesanal</h2>

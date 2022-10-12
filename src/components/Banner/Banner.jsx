@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { AdContainer, Button, Container } from "./Style";
 
+import { sizes } from "../../utils/constants/sizes";
 import banner from "../../assets/images/banner.png";
 import banner_mobile from "../../assets/images/banner_mobile.png";
 import Advantages from "./Advantages/Advantages";
 
 const Banner = () => {
+  const [isMobile, setIsMobile] = useState(null);
+
+  window.addEventListener("resize", () => {
+    const size = sizes.mobile_medium.replace("px", "");
+    window.screen.width < Number(size) ? setIsMobile(true) : setIsMobile(false);
+  });
+
   return (
     <Container>
       <AdContainer>
@@ -19,8 +27,10 @@ const Banner = () => {
         <Button>Comprar Agora</Button>
       </AdContainer>
       <Advantages />
-      <img src={banner} />
-      <img src={banner_mobile} />
+      <img
+      src={isMobile ? banner_mobile : banner}
+      style={(isMobile && { height: "85rem" }) || { border: "none" }}
+      alt="King Burguer" />
     </Container>
   );
 };
