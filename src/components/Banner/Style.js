@@ -26,3 +26,7 @@ img {
   }
 }
 `;
+
+export const AdContainer = styled.div`
+background: #fff;
+`;
