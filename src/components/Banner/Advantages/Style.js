@@ -49,3 +49,7 @@ export const Advantage = styled.div`
   background-color: #fff;
   width: 100%;
 `;
+
+export const AdvantageIcon = styled.div`
+  background-color: #fff;
+`;
