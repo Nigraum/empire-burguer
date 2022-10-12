@@ -108,3 +108,8 @@ export const AdContainer = styled.div`
     width: 36rem;
   }
 `;
+
+export const Button = styled.button`
+  background-color: #fff;
+  width: 100%;
+`;

@@ -1,5 +1,5 @@
 import React from "react";
-import { AdContainer, Container } from "./Style";
+import { AdContainer, Button, Container } from "./Style";
 
 import banner from "../../assets/images/banner.png";
 import banner_mobile from "../../assets/images/banner_mobile.png";
@@ -15,6 +15,7 @@ const Banner = () => {
         <h4>
           Pra quem tem um <span>Apetite de um REI</span>
         </h4>
+        <Button>Comprar Agora</Button>
       </AdContainer>
       <img src={banner} />
       <img src={banner_mobile} />
