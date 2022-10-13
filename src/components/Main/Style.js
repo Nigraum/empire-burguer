@@ -8,4 +8,20 @@ export const Container = styled.div`
   width: 117rem;
   margin: 0 auto;
   margin-bottom: 10rem;
+
+  @media screen and (${device.laptop}) {
+    width: 90rem;
+  }
+
+  @media screen and (${device.table}) {
+    width: 80rem;
+  }
+
+  @media screen and (${device.ipad}) {
+    width: fit-content;
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    margin-bottom: 6.4rem;
+  }
 `;
