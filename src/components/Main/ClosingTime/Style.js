@@ -36,3 +36,7 @@ export const Badge = styled.div`
     }
   }
 `;
+
+export const VerticalLine = styled.div`
+  border: 1px solid rgba(29, 6, 5, 0.4);
+`;
