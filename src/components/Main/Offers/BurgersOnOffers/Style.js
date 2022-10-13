@@ -42,6 +42,50 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media screen and (${device.laptop}) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+
+    article:nth-child(1) {
+      grid-column: 1/3;
+    }
+  }
+
+  @media screen and (${device.ipad}) {
+    display: flex;
+    flex-direction: column;
+    
+    article {
+      width: 40rem;
+
+      span {
+        h4 {
+          font-size: 1.6rem;
+          margin-bottom: 0.25rem;
+        }
+
+        h3 {
+          font-size: 2.7rem;
+        }
+      }
+
+      img {
+        width: 40rem;
+      }
+    }
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    article {
+      width: 37rem;
+
+      img {
+        width: 37rem;
+      }
+    }
+  }
 `;
 
 export const OfferInfo = styled.div`
