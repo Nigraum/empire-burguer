@@ -38,7 +38,19 @@ export const Badge = styled.div`
 `;
 
 export const Hashtag = styled.div`
+  h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: ${colors.brown_secondary};
+  }
 
+  h3 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    font-family: "Lilita One";
+    text-transform: uppercase;
+    color: ${colors.red};
+  }
 `;
 
 export const VerticalLine = styled.div`
