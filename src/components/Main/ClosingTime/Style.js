@@ -104,10 +104,24 @@ export const Hashtag = styled.div`
     text-transform: uppercase;
     color: ${colors.red};
   }
+
+  @media screen and (${device.laptop}) {
+    h3 {
+      font-size: 4rem;
+    }
+  }
 `;
 
 export const VerticalLine = styled.div`
   border: 1px solid rgba(29, 6, 5, 0.4);
   height: 8.2rem;
   margin: auto 1.5rem;
+
+  @media screen and (${device.ipad}) {
+    height: 6rem;
+  }
+
+  @media screen and (${device.ipad}) {
+    margin: auto 1.4rem;
+  }
 `;
