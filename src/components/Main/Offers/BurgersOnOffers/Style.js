@@ -108,4 +108,14 @@ export const OfferInfo = styled.div`
     color: ${(props) => props.color};
     font-weight: 400;
   }
+
+  @media screen and (${device.ipad}) {
+    h3 {
+      font-size: 2rem;
+    }
+
+    h4 {
+      font-size: 1.6rem;
+    }
+  }
 `;
