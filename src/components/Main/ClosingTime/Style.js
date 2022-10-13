@@ -69,7 +69,7 @@ export const Badge = styled.div`
 
   @media screen and (${device.mobile_medium}) {
     width: 37.9rem;
-    padding: 1.8rem;
+    padding: 1.8rem 1.3rem;
 
     img {
       width: 7rem;
