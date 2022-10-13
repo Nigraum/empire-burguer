@@ -9,6 +9,30 @@ export const Container = styled.div`
 `;
 
 export const Badge = styled.div`
-  background: #000;
-  width: 60%;
+  display: flex;
+  align-items: center;
+  width: 57rem;
+
+  margin-right: 3rem;
+  padding: 1.8rem 2.2rem;
+  background-color: ${(props) => props.color};
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+
+  div {
+    h3 {
+      font-family: "Lilita One";
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      color: ${colors.brown_secondary};
+      margin-bottom: 0.55rem;
+    }
+
+    h4 {
+      color: ${colors.white};
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+  }
 `;
