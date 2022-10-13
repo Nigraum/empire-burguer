@@ -30,10 +30,10 @@ const ClosingTime = () => {
       setIsClosed(true);
     }
   }, milliseconds);
-  
+
   return(
     <Container>
-      <Badge>
+      <Badge color={isClosed ? colors.red : colors.green}>
       <img src={clockicon} alt="icon" />
       <VerticalLine />
       <div>
