@@ -7,3 +7,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const Badge = styled.div`
+  background: #000;
+  width: 60%;
+`;
