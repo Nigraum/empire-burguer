@@ -6,6 +6,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (${device.laptop}) {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 `;
 
 export const Badge = styled.div`
@@ -33,6 +38,54 @@ export const Badge = styled.div`
       font-size: 1.6rem;
       margin-bottom: 1rem;
       font-weight: 400;
+    }
+  }
+
+  @media screen and (${device.laptop}) {
+    margin-bottom: 6.4rem;
+  }
+
+  @media screen and (${device.ipad}) {
+    width: 40rem;
+    margin-right: 0;
+
+    img {
+      width: 7rem;
+      height: 7rem;
+    }
+
+    div {
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+      }
+
+      h4 {
+        font-size: 1.3rem;
+        margin-bottom: 0.6rem;
+      }
+    }
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    width: 37.9rem;
+    padding: 1.8rem;
+
+    img {
+      width: 7rem;
+      height: 7rem;
+    }
+
+    div {
+      h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.4rem;
+      }
+
+      h4 {
+        font-size: 1.4rem;
+        margin-bottom: 0.6rem;
+      }
     }
   }
 `;
