@@ -39,4 +39,6 @@ export const Badge = styled.div`
 
 export const VerticalLine = styled.div`
   border: 1px solid rgba(29, 6, 5, 0.4);
+  height: 8.2rem;
+  margin: auto 1.5rem;
 `;
