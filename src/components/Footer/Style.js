@@ -17,5 +17,11 @@ export const Container = styled.section`
     line-height: 3.5rem;
   }
 
-  
+  h3 {
+    color: ${colors.brown_secondary};
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    margin-bottom: 3.2rem;
+  }
 `;
