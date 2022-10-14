@@ -32,3 +32,8 @@ export const Bottom = styled.footer`
   width: 100%;
   color: #fff;
 `;
+
+export const Nav = styled.div`
+  height: 20rem;
+  width: 80rem;
+`;

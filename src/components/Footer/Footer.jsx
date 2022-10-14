@@ -1,9 +1,11 @@
 import React from "react";
 import { colors } from "../../styles/global";
 import { sizes } from "../../utils/constants/sizes";
-import { Bottom, Container } from "./Style";
+import { Bottom, Container, Nav } from "./Style";
 
 import GoogleMaps from "../Shared/GoogleMaps/GoogleMaps"
+import Logo from "../Shared/SVG/Logo";
+import SocialIcons from "../Shared/SocialIcons/SocialIcons";
 
 const Footer = () => {
   return (
@@ -12,7 +14,25 @@ const Footer = () => {
       <h3>Estaremos de porta aberta para a vossa realeza</h3>
       <GoogleMaps />
       <Bottom>
-        <h1>test</h1>
+        <Nav>
+          <div>
+            <Logo color={colors.red} />
+            <h1>
+              <span>Empire</span> Burguer
+            </h1>
+          </div>
+
+          <div>
+            <ul>
+              <li>Home</li>
+              <li>Localização</li>
+              <li>Cardápio</li>
+              <li>Sobre</li>
+            </ul>
+            <SocialIcons color={colors.yellow} />
+          </div>
+        </Nav>
+        
       </Bottom>
     </Container>
   );
