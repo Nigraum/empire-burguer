@@ -27,10 +27,28 @@ export const Container = styled.section`
 `;
 
 export const Bottom = styled.footer`
-  height: 50%;
-  background: #000;
-  width: 100%;
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 13.5rem;
+  width: 100vw;
+  background-color: ${colors.white};
+
+  h4 {
+    font-family: "Inter";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    color: #020e1f4d;
+    text-align: center;
+    margin: 1.1rem 0;
+
+    span {
+      font-weight: 700;
+      color: #020e1f4d;
+    }
+  }
 `;
 
 export const Nav = styled.div`
