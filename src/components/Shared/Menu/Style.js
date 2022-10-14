@@ -31,7 +31,7 @@ input:checked ~ label #hamburguer:after {
 
 export const MenuDiv = styled.div`
 background: ${colors.white};
-border: 1px dashed ${colors.brown};
+
 box-sizing: content-box;
 border-radius: 50%;
 width: 60px;
@@ -52,8 +52,8 @@ top: 29px;
 left: 15px;
 transition: 0.3s ease-in-out;
 
-&::before,
-&::after {
+&:before,
+&:after {
   background: #000;
   content: "";
   display: block;
@@ -67,7 +67,7 @@ transition: 0.3s ease-in-out;
   top: -10px;
 }
 
-&after {
+&:after {
   bottom: -10px;
 }
 `;
