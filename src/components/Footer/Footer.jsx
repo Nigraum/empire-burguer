@@ -28,6 +28,7 @@ const Footer = () => {
               <span>Empire</span> Burguer
             </h1>
           </div>
+          {isMobile && <HorizontalLine />}
 
           <div>
             <ul>
@@ -36,6 +37,7 @@ const Footer = () => {
               <li>Cardápio</li>
               <li>Sobre</li>
             </ul>
+            {isMobile && <HorizontalLine />}
             <SocialIcons color={colors.yellow} />
           </div>
         </Nav>
