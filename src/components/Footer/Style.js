@@ -217,4 +217,12 @@ export const HorizontalLine = styled.div`
   width: 110rem;
   margin: 0 auto;
   border-bottom: 1px solid rgba(29, 6, 5, 0.15);
+
+  @media screen and (${device.laptop}) {
+    width: 90rem;
+  }
+
+  @media screen and (${device.laptop}) {
+    width: 38rem;
+  }
 `;
