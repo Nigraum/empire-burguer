@@ -33,6 +33,9 @@ const Footer = () => {
           </div>
         </Nav>
         <HorizontalLine />
+        <h4>
+          <span>2022 © EmpireBurger.</span> Todos os direitos reservados.
+        </h4>
       </Bottom>
     </Container>
   );

@@ -24,6 +24,12 @@ export const Container = styled.section`
     line-height: 2.2rem;
     margin-bottom: 3.2rem;
   }
+
+  @media screen and (${device.mobile_medium}) {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
 `;
 
 export const Bottom = styled.footer`
