@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { colors } from "../../styles/global";
 import { sizes } from "../../utils/constants/sizes";
 import { Bottom, Container, HorizontalLine, Nav } from "./Style";
@@ -8,6 +8,13 @@ import Logo from "../Shared/SVG/Logo";
 import SocialIcons from "../Shared/SocialIcons/SocialIcons";
 
 const Footer = () => {
+  const [isMobile, setIsMobile] = useState(null);
+
+  window.addEventListener("resize", () => {
+    const size = sizes.mobile_medium.replace("px", "");
+    window.screen.width < Number(size) ? setIsMobile(true) : setIsMobile(false);
+  });
+  
   return (
     <Container >
       <h2>Onde fica nosso castelo</h2>
