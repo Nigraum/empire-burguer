@@ -101,6 +101,116 @@ export const Nav = styled.div`
       font-weight: 400;
     }
   }
+
+  @media screen and (${device.laptop}) {
+    width: 90rem;
+
+    div {
+      h1 {
+        font-size: 2.05rem;
+      }
+    }
+
+    ul {
+      margin-right: 9rem;
+
+      li {
+        font-size: 1.8rem;
+        margin-right: 1.8rem;
+      }
+    }
+  }
+
+  @media screen and (${device.tablet}) {
+    width: 80rem;
+
+    div {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    ul {
+      margin-right: 7.5rem;
+
+      li {
+        font-size: 1.6rem;
+        margin-right: 1.6rem;
+      }
+    }
+  }
+
+  @media screen and (${device.ipad}) {
+    width: 60rem;
+
+    ul {
+      margin-right: 0;
+
+      li {
+        font-size: 1.4rem;
+        margin-right: 0;
+        margin-left: 1.4rem;
+      }
+    }
+
+    div > div {
+      display: none;
+    }
+  }
+
+  @media screen and (${device.mobile_medium}) {
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+
+    div {
+      margin-bottom: 1.3rem;
+
+      h1 {
+        font-size: 2.9rem;
+      }
+    }
+
+    div:has(ul) {
+      flex-direction: column-reverse;
+      margin: 0;
+    }
+
+    ul {
+      flex-direction: column;
+      text-align: center;
+      margin-right: 0;
+
+      li {
+        font-size: 1.8rem;
+        margin-left: 0;
+        margin-bottom: 1.38rem;
+
+        :last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    div > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      height: fit-content;
+
+      * > {
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+      }
+    }
+
+    div > svg {
+      height: fit-content;
+    }
+  }
 `;
 
 export const HorizontalLine = styled.div`
