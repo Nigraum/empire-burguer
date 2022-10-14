@@ -1,7 +1,7 @@
 import React from "react";
 import { colors } from "../../styles/global";
 import { sizes } from "../../utils/constants/sizes";
-import { Bottom, Container, Nav } from "./Style";
+import { Bottom, Container, HorizontalLine, Nav } from "./Style";
 
 import GoogleMaps from "../Shared/GoogleMaps/GoogleMaps"
 import Logo from "../Shared/SVG/Logo";
@@ -32,7 +32,7 @@ const Footer = () => {
             <SocialIcons color={colors.yellow} />
           </div>
         </Nav>
-        
+        <HorizontalLine />
       </Bottom>
     </Container>
   );

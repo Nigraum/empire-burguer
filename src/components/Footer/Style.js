@@ -92,3 +92,9 @@ export const Nav = styled.div`
     }
   }
 `;
+
+export const HorizontalLine = styled.div`
+  width: 100vw;
+  background-color: #000;
+  border-bottom: 1px solid;
+`;
