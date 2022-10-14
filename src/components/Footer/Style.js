@@ -55,6 +55,10 @@ export const Bottom = styled.footer`
       color: #020e1f4d;
     }
   }
+
+  @media screen and (${device.mobile_medium}) {
+    height: fit-content;
+  }
 `;
 
 export const Nav = styled.div`
