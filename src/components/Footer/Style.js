@@ -94,7 +94,7 @@ export const Nav = styled.div`
 `;
 
 export const HorizontalLine = styled.div`
-  width: 100vw;
-  background-color: #000;
-  border-bottom: 1px solid;
+  width: 110rem;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(29, 6, 5, 0.15);
 `;
