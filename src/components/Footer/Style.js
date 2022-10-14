@@ -25,3 +25,10 @@ export const Container = styled.section`
     margin-bottom: 3.2rem;
   }
 `;
+
+export const Bottom = styled.footer`
+  height: 50%;
+  background: #000;
+  width: 100%;
+  color: #fff;
+`;
