@@ -52,6 +52,43 @@ export const Bottom = styled.footer`
 `;
 
 export const Nav = styled.div`
-  height: 20rem;
-  width: 80rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 5rem;
+  width: 110rem;
+  margin: 2rem auto;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      color: ${colors.yellow};
+      font-size: 2.9rem;
+      line-height: 3.2rem;
+      font-weight: 400;
+      margin-left: 0.4rem;
+      text-transform: uppercase;
+
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin-right: 15.1rem;
+
+    li {
+      color: ${colors.brown};
+      font-size: 1.8rem;
+      margin-right: 3.2rem;
+      line-height: 2.5rem;
+      font-weight: 400;
+    }
+  }
 `;
